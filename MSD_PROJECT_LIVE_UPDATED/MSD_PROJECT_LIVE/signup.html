@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Sign up — FastFood</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header>
+  <div class="nav-row container">
+    <div class="brand"><div class="logo">FB</div><div><h1>FastFood</h1><p>Hot • Fresh • Fast</p></div></div>
+  </div>
+</header>
+
+<main class="container" style="padding-top:24px">
+  <div class="auth-card" style="max-width:560px;margin:0 auto;background:white;">
+    <h2>Sign up</h2>
+    <div id="step1">
+      <label>Name</label>
+      <input id="nameInput" class="input" placeholder="Your name" />
+      <label>Mobile number</label>
+      <input id="phoneInput" class="input" placeholder="Enter 10-digit mobile" />
+      <div style="margin-top:10px;display:flex;gap:8px">
+        <button id="sendOtpBtn" class="btn btn-primary">Send OTP</button>
+        <a href="login.html" class="btn btn-ghost">Login</a>
+      </div>
+    </div>
+    <div id="step2" style="display:none;margin-top:12px">
+      <label>Enter OTP</label>
+      <input id="otpInput" class="input" placeholder="123456" />
+      <div style="margin-top:10px;display:flex;gap:8px">
+        <button id="verifyOtpBtn" class="btn btn-primary">Verify & Continue</button>
+      </div>
+    </div>
+    <div style="margin-top:10px;color:#6b7280;font-size:13px" id="otpInfo">OTP will be <strong>123456</strong>.</div>
+  </div>
+</main>
+
+<script src="js/auth.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', ()=>{
+  setupSignupPage();
+  document.getElementById('sendOtpBtn').addEventListener('click', ()=>{ document.getElementById('step1').style.display='none'; document.getElementById('step2').style.display='block'; });
+});
+</script>
+</body>
+</html>
