@@ -1,3 +1,3 @@
-MSD Project Live - Cleaned & Updated
-Student: R Hanumathsai
-Roll No: 231FA04239
+MSD Project  - Online Food Delivary Website
+Student: R Hanumathsai, K DilipKumar
+Roll No: 231FA04239,231FA04243
